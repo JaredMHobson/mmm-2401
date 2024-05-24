@@ -1,0 +1,12 @@
+<h1>Foods</h1>
+
+<% @facade.searched_foods.each do |food| %>
+  <div class="food_info">
+    <ul>
+      <li>GTIN/UPC Code: <%= food.gtinupc %></li>
+      <li>Description: <%= food.description %></li>
+      <li>Brand Owner: <%= food.brand %></li>
+      <li>Ingredients: <%= food.ingredients %></li>
+    </ul>
+  </div>
+<% end %>
